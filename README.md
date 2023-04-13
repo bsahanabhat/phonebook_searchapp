@@ -1,0 +1,2 @@
+1. This project is implemented with both the assignment phonebook and the search app,Two apps run on two different end point ie phone book on /api/contacts and search app on /api/documents
+2. Please find the pdf document - mPockketBothAssignementDocumentation.pdf mentioned under the folder -"docs" for detailed instruction to execute the project and for the flow of Phonebook & Search app

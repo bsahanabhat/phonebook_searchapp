@@ -1,0 +1,83 @@
+--
+-- Database: `phonebook`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contacts`
+--
+
+CREATE TABLE `contacts` (
+  `id` int(11) NOT NULL,
+  `firstname` varchar(255) DEFAULT NULL,
+  `lastname` varchar(255) DEFAULT NULL,
+  `phonenumber` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contacts`
+--
+
+INSERT INTO `contacts` (`id`, `firstname`, `lastname`, `phonenumber`) VALUES
+(1, 'mpocket', 'mpocket', '9654564465'),
+(2, 'Ramesh', 'S', '9797979745'),
+(3, 'Suresh', 'R', '9787878878'),
+(4, 'Malini', 'M', '9797954646');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `documents`
+--
+
+CREATE TABLE `documents` (
+  `id` int(11) NOT NULL,
+  `textdocument` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `documents`
+--
+
+INSERT INTO `documents` (`id`, `textdocument`) VALUES
+(4, 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,'),
+(5, 'A wonderful serenity has taken possession of my entire soul, like these sweet mornings'),
+(6, 'The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV q'),
+(7, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor'),
+(8, 'Blessed. Greater good waters bearing which there to evening itself subdue isn\'t,'),
+(9, 'Stars bearing sixth lights. Air, evening. You\'ll above for without. Behold also void life them void '),
+(10, 'Under over called sea appear that yielding third, sea. Can\'t heaven signs Beast behold be heaven sec');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `contacts`
+--
+ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `documents`
+--
+ALTER TABLE `documents`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `documents`
+--
+ALTER TABLE `documents`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+COMMIT;
